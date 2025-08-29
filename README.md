@@ -33,7 +33,7 @@ This _Medallion approach_ makes data validation at every point easy, as you can 
 
 Also, for future use-case when another business need may arise that was not captured in the present problem statement, the bronze layer can save the day!
 
-## Data Transformation
+## Data Storage and Management
 
 At each stage of the transformation, the data is stored and managed in a storage system, for the:
 
@@ -86,3 +86,4 @@ So, I broke it down this way:
 
 ## Other Information:
 The architecture is designed to _scale horizontally_ (distributes workload across multiple machines) so that as complaint volume or users grows (from let's say thousands per day to millions per day),data ingestion and transformation can scale independently and ensuring fault tolerance without negatively impacting downstream users or causing the system to break/crash, unlike the _vertical scaling_ that adds more CPU/RAM to a single machine.
+
